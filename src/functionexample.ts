@@ -94,3 +94,9 @@ function display4(a:number,b:number,c:number=100):void{
 }
 display4(1,2,3);
 display4(1,4);
+// arrow function
+//Arrow Functions
+let display00 = (): void => {
+    console.log("Welcome");
+};
+display00();

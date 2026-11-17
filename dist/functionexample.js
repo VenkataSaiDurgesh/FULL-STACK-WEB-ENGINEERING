@@ -76,4 +76,10 @@ function display4(a, b, c = 100) {
 }
 display4(1, 2, 3);
 display4(1, 4);
+// arrow function
+//Arrow Functions
+let display00 = () => {
+    console.log("Welcome");
+};
+display00();
 //# sourceMappingURL=functionexample.js.map
