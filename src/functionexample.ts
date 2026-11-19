@@ -100,3 +100,50 @@ let display00 = (): void => {
     console.log("Welcome");
 };
 display00();
+//write a function by taking bno,bname,and b,price
+//a.use an arrow function
+//b.use a function experssion
+function bookInfo(bno:number,bname:string,bprice:number){
+    console.log(`Book information :${bno},${bname},${bprice}`);
+}
+bookInfo(101,"typescript",2000);
+//arrow function
+let bookInfo1 = (bno: number, bname: string, bprice: number): void => {
+    console.log(`Book information :${bno},${bname},${bprice}`);
+};
+bookInfo1(10,"java",1000);
+//fuction expression
+let bookInfo2 = function (bno: number, bname: string, bprice: number): void {
+    console.log(`Book information :${bno},${bname},${bprice}`);
+};
+bookInfo2(103, "react", 1500);
+//passing an array to a function
+//we can pass array to any function
+//syntax:
+//function functionname(arrayname:datatype[]):return type
+//{ //logic}
+//example
+let marks:number[]=[65,78,98];
+function displaymarks(a:number[]):void{
+    console.log(a);
+
+}
+//calling the function
+displaymarks(marks);
+//example2:write a program to read a number and string of book names and print the information via a function
+let m:number=10;
+let bookarray=["java","donet","typescript"];
+function displayBooks(a:number,b:string[]):void
+{
+    console.log(`Number of books: ${a}`);
+    console.log(`Book names are :${b}`);
+    
+}
+
+displayBooks(m,bookarray);
+//Note :array will hod different datatype too
+//ex
+let studentinfo=[102,103,104];//similar data type
+console.log(studentinfo);
+let studntinfo1=[101,"cse","klu"];//different data type
+console.log(studntinfo1);
